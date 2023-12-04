@@ -85,7 +85,7 @@ class Tetris:
                     if i + self.figure.y > self.height -1 or \
                     j + self.figure.x > self.width -1 or \
                     j + self.figure.x < 0 or \
-                    self.field[i + self.figure.y[j+self.figure.x]>0]:
+                    self.field[i + self.figure.y][j+self.figure.x]>0:
                         intersection = True
 
         return intersection
@@ -229,8 +229,6 @@ clock.tick(fps)
 
 
 pygame.quit()
-
-
 
 
 
